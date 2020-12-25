@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/bar_top" android:id="@+id/top_bar"/>
+
+    <TextView
+        android:id="@+id/options3_title_textview"
+        tools:text="This is a question?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/options3_description_textview"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        style="@style/TrickQuestionStyle"/>
+
+    <TextView
+        android:id="@+id/options3_description_textview"
+        tools:text="And this is a description of the question"
+        style="@style/TrickQuestionDescriptionStyle"
+        app:layout_constraintBottom_toTopOf="@id/options3_buttons_LL"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options3_title_textview"/>
+
+    <LinearLayout
+        android:id="@+id/options3_buttons_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options3_description_textview"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar_LL"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/question_answer_horizontal_margin">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/options3_first_button"
+            android:layout_width="match_parent"
+            android:layout_height= "wrap_content"
+            tools:text="answer 1"
+            android:layout_weight="1"
+            style="@style/AnswerButtonStyle"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/options3_second_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="answer 2"
+            android:layout_weight="1"
+            style="@style/AnswerButtonStyle"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/options3_third_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="answer 3"
+            android:layout_weight="1"
+            style="@style/AnswerButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bar_bottom" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

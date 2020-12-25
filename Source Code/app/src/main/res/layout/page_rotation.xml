@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/bar_top" android:id="@+id/top_bar"/>
+
+    <TextView
+        android:id="@+id/spins_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/many_spins_q_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/spins_description_textview"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        style="@style/TrickQuestionStyle" />
+
+    <TextView
+        android:id="@+id/spins_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_spins_text"
+        app:layout_constraintTop_toBottomOf="@id/spins_title_textview"
+        app:layout_constraintBottom_toTopOf="@id/spins_numberpicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TrickQuestionDescriptionStyle"/>
+
+    <NumberPicker
+        android:id="@+id/spins_numberpicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/spins_select_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spins_description_textview" />
+
+    <Button
+        android:id="@+id/spins_select_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spins_numberpicker"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar_LL"
+        style="@style/AnswerButtonStyle"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bar_bottom" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

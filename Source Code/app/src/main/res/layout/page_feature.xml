@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/bar_top" android:id="@+id/top_bar"/>
+
+    <TextView
+        android:id="@+id/feature_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_q_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/feature_description_textview"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        style="@style/TrickQuestionStyle" />
+
+    <TextView
+        android:id="@+id/feature_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feature_description_text"
+        app:layout_constraintTop_toBottomOf="@id/feature_title_textview"
+        app:layout_constraintBottom_toTopOf="@id/feature_imageview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TrickQuestionDescriptionStyle"/>
+
+    <ImageView
+        android:id="@+id/feature_imageview"
+        android:layout_width="404dp"
+        android:layout_height="153dp"
+        android:src="@drawable/rail_box_img"
+        app:layout_constraintBottom_toTopOf="@id/feature_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feature_description_textview"
+        android:contentDescription="@string/image_features_cd" />
+
+    <Spinner
+        android:id="@+id/feature_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feature_imageview"
+        app:layout_constraintBottom_toTopOf="@id/feature_select_button"
+        android:layout_marginHorizontal="@dimen/spinner_horizontal_margin" />
+
+    <EditText
+        android:id="@+id/feature_other_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/feature_spinner"
+        app:layout_constraintEnd_toEndOf="@id/feature_spinner"
+        app:layout_constraintTop_toBottomOf="@id/feature_spinner"
+        app:layout_constraintBottom_toTopOf="@id/feature_select_button"
+        android:hint="@string/feature_other_hint"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:maxLength="25"
+        style="@style/SpinnerItemStyle"
+        android:autofillHints="Other input for a feature name that is not an available selection" />
+
+    <Button
+        android:id="@+id/feature_select_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feature_other_edittext"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar_LL"
+        style="@style/AnswerButtonStyle"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bar_bottom" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

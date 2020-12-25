@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/bar_top" android:id="@+id/top_bar"/>
+
+    <TextView
+        android:id="@+id/butter_greet_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/butter_discovered_greeting_text"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintBottom_toTopOf="@id/butter_name_RL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        style="@style/headline3"/>
+
+
+    <RelativeLayout
+        android:id="@+id/butter_name_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/butter_name_description_textview"
+        app:layout_constraintTop_toBottomOf="@id/butter_greet_textview">
+
+        <TextView
+            android:id="@+id/butter_name_discovered_textview"
+            style="@style/headline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/trick_name_background"
+            android:gravity="center"
+            android:layout_margin="35dp"
+            android:paddingVertical="40dp"
+            android:paddingHorizontal="@dimen/padding_from_border_edge"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:elevation="@dimen/display_trick_name_elevation"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:clickable="true"
+            tools:text="Backside Noseslide 180 stalefish  to miller flip to nothing  extraveganza"
+            android:focusable="true" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/butter_try_again_button"
+            android:text="@string/try_again_button_text"
+            android:textColor="@color/primaryDarkColor"
+            android:layout_alignEnd="@id/butter_name_discovered_textview"
+            android:layout_alignRight="@id/butter_name_discovered_textview"
+            style="@style/TrickDiscoveredButtonsStyle"
+            android:onClick="restartTrickSearch"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/butter_name_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/butter_continue_description_text"
+        app:layout_constraintTop_toBottomOf="@id/butter_name_RL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/complete_butter_button"
+        style="@style/TrickQuestionDescriptionStyle"/>
+
+    <Button
+        android:id="@+id/complete_butter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/butter_name_description_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/continue_butter_button"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar_LL"
+        style="@style/AnswerButtonStyle"
+        android:text="@string/complete_button_text"
+        android:onClick="butterComplete"/>
+
+    <Button
+        android:id="@+id/continue_butter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/butter_name_description_textview"
+        app:layout_constraintStart_toEndOf="@id/complete_butter_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar_LL"
+        style="@style/AnswerButtonStyle"
+        android:text="@string/continue_button_text"
+        android:onClick="butterContinue"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bar_bottom" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

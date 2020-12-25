@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todo_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+    <RelativeLayout
+        android:id="@+id/empty_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/no_tricks_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_tricks_todo_text"
+            android:layout_marginHorizontal="@dimen/margin_empty_list_text"
+            android:textAppearance="?android:textAppearanceMedium"
+            style="@style/subtitle1"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/find_trick_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_question_answer_24px"
+        android:text="@string/find_trick_button_text"
+        android:contentDescription="@string/find_trick_cd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/find_trick_fab_right_margin"
+        android:layout_marginBottom="@dimen/find_trick_fab_bottom_margin"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:layout_alignParentEnd="true"
+        tools:ignore="UnusedAttribute" />
+
+</RelativeLayout>

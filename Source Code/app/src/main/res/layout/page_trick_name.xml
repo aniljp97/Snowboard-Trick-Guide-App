@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/bar_top" android:id="@+id/top_bar"/>
+
+    <TextView
+        android:id="@+id/trick_greet_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trick_discovered_greeting_text"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintBottom_toTopOf="@id/trick_name_RL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        style="@style/headline3"/>
+
+
+    <RelativeLayout
+        android:id="@+id/trick_name_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/trick_name_description_textview"
+        app:layout_constraintTop_toBottomOf="@id/trick_greet_textview">
+
+        <TextView
+            android:id="@+id/trick_name_discovered_textview"
+            style="@style/headline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/trick_name_background"
+            android:gravity="center"
+            android:layout_margin="35dp"
+            android:paddingVertical="40dp"
+            android:paddingHorizontal="@dimen/padding_from_border_edge"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:elevation="@dimen/display_trick_name_elevation"
+            android:maxLines="4"
+            android:ellipsize="end"
+            tools:text="Backside Noseslideee to sadfj sd;ae ;a weoie ijasdo kdo oasf joeio kasdoj JA oiS Dios djo DSFii ASOJAOSFI s j A" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/trick_to_short_vers_button"
+            android:text="@string/shorten_button_text"
+            android:layout_alignStart="@id/trick_name_discovered_textview"
+            android:layout_alignLeft="@id/trick_name_discovered_textview"
+            style="@style/TrickDiscoveredButtonsStyle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/trick_try_again_button"
+            android:text="@string/try_again_button_text"
+            android:textColor="@color/primaryDarkColor"
+            android:layout_alignEnd="@id/trick_name_discovered_textview"
+            android:layout_alignRight="@id/trick_name_discovered_textview"
+            style="@style/TrickDiscoveredButtonsStyle"
+            android:onClick="restartTrickSearch"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/trick_name_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trick_discovered_description_text"
+        app:layout_constraintTop_toBottomOf="@id/trick_name_RL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar_LL"
+        style="@style/TrickQuestionDescriptionStyle"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bar_bottom" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

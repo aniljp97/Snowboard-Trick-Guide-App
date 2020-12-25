@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/trick_item_LL"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/item_list_background"
+    android:elevation="@dimen/display_trick_name_elevation"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_from_border_edge">
+
+    <ImageView
+        android:id="@+id/trick_icon_imageview"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic__01_snowboarding"
+        android:layout_marginRight="@dimen/editor_text_margin_from_icon"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/category_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Aerial"
+            style="@style/headline3"
+            android:textColor="@color/primaryDarkColor"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/trick_name_textview"
+            style="@style/headline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLines="3"
+            android:ellipsize="end"
+            tools:text="Backside Noseslide to Fakie" />
+
+        <TextView
+            android:id="@+id/trick_date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1/1/21"
+            style="@style/subtitle2"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_open_up24px"
+        android:layout_marginLeft="@dimen/editor_text_margin_from_icon"
+        android:contentDescription="@string/image_expand_trick_cd"
+        android:layout_marginStart="@dimen/editor_text_margin_from_icon"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

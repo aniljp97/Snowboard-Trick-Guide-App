@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_from_screen_edge"
+        android:paddingBottom="64dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_from_border_edge"
+            android:background="@drawable/item_list_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_stats_button_text"
+                style="@style/headline5"
+                android:textColor="@color/primaryDarkColor"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_from_border_edge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_tricks_info"
+                    style="@style/subtitle2"/>
+
+                <TextView
+                    android:id="@+id/num_trick_discovered_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="12"
+                    style="@style/subtitle1"
+                    android:layout_marginLeft="@dimen/margin_text_left_from_header"
+                    android:layout_marginStart="@dimen/margin_text_left_from_header" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_from_border_edge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_completed_tricks_info"
+                    style="@style/subtitle2"/>
+
+                <TextView
+                    android:id="@+id/num_of_completed_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="12"
+                    style="@style/subtitle1"
+                    android:layout_marginLeft="@dimen/margin_text_left_from_header"
+                    android:layout_marginStart="@dimen/margin_text_left_from_header" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_from_border_edge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_tricks_to_do_info"
+                    style="@style/subtitle2"/>
+
+                <TextView
+                    android:id="@+id/num_of_todo_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="12"
+                    style="@style/subtitle1"
+                    android:layout_marginLeft="@dimen/margin_text_left_from_header"
+                    android:layout_marginStart="@dimen/margin_text_left_from_header" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_list_background"
+            android:layout_marginTop="8dp"
+            android:padding="@dimen/padding_from_border_edge">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/learn_button_text"
+                style="@style/headline5"
+                android:textColor="@color/primaryDarkColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <Button
+                android:id="@+id/terminology_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/important_terminology_button_text"
+                style="@style/subtitle1"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/links_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/helpful_links_button_text"
+                style="@style/subtitle1"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/understanding_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/understanding_defining_a_trick_button_text"
+                style="@style/subtitle1"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_list_background"
+            android:layout_marginTop="8dp"
+            android:padding="@dimen/padding_from_border_edge">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/credits_button_text"
+                style="@style/headline5"
+                android:textColor="@color/primaryDarkColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="Icon made by flaticon.com/authors/monkik from flaticon.com"
+                style="@style/subtitle2"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="Icon made by flaticon.com/authors/freepik from flaticon.com"
+                style="@style/subtitle2"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="Icons from material.io"
+                style="@style/subtitle2"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="Icons from icons8.com"
+                style="@style/subtitle2"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="Information and images from snowboarder.com"
+                style="@style/subtitle2"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="Information and images from snowboardaddiction.com"
+                style="@style/subtitle2"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="Information from snowboardprocamp.com"
+                style="@style/subtitle2"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

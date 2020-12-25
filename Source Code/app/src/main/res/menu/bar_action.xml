@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add_trick_manual"
+        android:icon="@drawable/ic_baseline_add_box_24"
+        android:title="@string/add_trick_manually_button_text"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="@string/delete_selected_button_text"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_move_to_todolist"
+        android:icon="@drawable/ic_baseline_arrow_circle_down_24"
+        android:title="@string/move_to_to_do_list"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_move_to_completelist"
+        android:icon="@drawable/ic_baseline_arrow_circle_up_24"
+        android:title="@string/move_to_completed_list"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_search_inlist"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search_in_list_action"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        android:visible="true" />
+
+</menu>

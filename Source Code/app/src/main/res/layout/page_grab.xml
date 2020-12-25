@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/bar_top" android:id="@+id/top_bar"/>
+
+    <TextView
+        android:id="@+id/grab_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_grab_q_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/grab_description_textview"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        style="@style/TrickQuestionStyle" />
+
+    <TextView
+        android:id="@+id/grab_description_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_grab_text"
+        app:layout_constraintTop_toBottomOf="@id/grab_title_textview"
+        app:layout_constraintBottom_toTopOf="@id/grab_imageview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TrickQuestionDescriptionStyle"/>
+
+    <ImageButton
+        android:id="@+id/cycle_images_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/grab_imageview"
+        app:layout_constraintEnd_toEndOf="@id/grab_imageview"
+        android:translationZ="1dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_baseline_autorenew_24"
+        android:contentDescription="@string/imagebutton_cycle_grab_cd"
+        tools:ignore="UnusedAttribute" />
+
+    <ImageView
+        android:id="@+id/grab_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:src="@drawable/snowboardaddiction_grabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/grab_spinner"
+        app:layout_constraintTop_toBottomOf="@id/grab_description_textview"
+        android:contentDescription="@string/image_grab_cd" />
+
+    <Spinner
+        android:id="@+id/grab_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grab_imageview"
+        app:layout_constraintBottom_toTopOf="@id/grab_select_button"
+        android:layout_marginHorizontal="@dimen/spinner_horizontal_margin" />
+
+    <EditText
+        android:id="@+id/grab_other_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/grab_spinner"
+        app:layout_constraintEnd_toEndOf="@id/grab_spinner"
+        app:layout_constraintTop_toBottomOf="@id/grab_spinner"
+        app:layout_constraintBottom_toTopOf="@id/grab_select_button"
+        android:hint="@string/other_grab_hint"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:maxLength="25"
+        style="@style/SpinnerItemStyle"
+        android:autofillHints="Other input of a grab that is not an available choice" />
+
+    <Button
+        android:id="@+id/grab_select_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grab_other_edittext"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar_LL"
+        style="@style/AnswerButtonStyle"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bar_bottom" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
