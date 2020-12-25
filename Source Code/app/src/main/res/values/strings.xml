@@ -1,0 +1,506 @@
+<resources>
+    <string name="app_name">SnowboardTrickGuide</string>
+
+    <!-- questions to ask the user -->
+    <!-- questions for aerial part of tree -->
+    <string name="category_q_text">Pick a category</string>
+    <string name="approach_stance_q_text">What stance is the trick approached on?</string>
+    <string name="any_spins_q_text">Were any spins performed?</string>
+    <string name="rotation_direction_q_text">What direction of rotation?</string>
+    <string name="many_spins_q_text">How many degrees of rotation are performed in the air before landing?</string>
+    <string name="grab_performed_q_text">Was a grab performed in the air?</string>
+    <string name="select_grab_q_text">What grab?</string>
+    <string name="shifty_performed_q_text">Was a shifty performed while in the air?</string>
+    <string name="inversion_performed_q_text">Was there any inversion?</string>
+    <string name="inversion_dir_q_text">Direction of inversion?</string>
+    <string name="num_flips_q_text">Number of flips?</string>
+    <string name="pop_used_q_text">What pop is used to get off the ground?</string>
+
+    <!-- questions for jib part of tree -->
+    <string name="type_of_jib_q_text">What type of jib?</string>
+    <string name="type_of_feature_q_text">What type of feature is the trick done on?</string>
+    <string name="side_of_feature_approach_q_text">What direction is the feature approached on?</string>
+    <string name="rotation_on_less_180_q_text">Is the rotation getting onto the feature less than a full 180 degree turn?</string>
+    <string name="type_slide_on_feature_q_text">What way is the board initially on the feature?</string>
+    <string name="press_performed_on_feature_q_text">Is a press performed while on the feature?</string>
+    <string name="type_press_q_text">What type of press?</string>
+    <string name="rotation_off_more_180_q_text">Is an about 180 degree rotation or more performed while coming off of the feature?</string>
+    <string name="tap_performed_out_q_text">Is a tail or nose tap performed while coming off of the feature?</string>
+    <string name="nose_tail_tap_out_q_text">Is the feature tapped with the nose or the tail?</string>
+    <string name="part_board_on_top_feature_q_text">What part of the board is on top of the feature?</string>
+    <string name="rotation_off_90_less_q_text">Is the rotation after coming off of the feature about 90 degrees or less?</string>
+    <string name="position_landed_off_feature_q_text">What way is the trick landed after coming off the feature?</string>
+    <string name="rotation_off_270_q_text">Is the rotation after coming off of the feature about 270 degrees?</string>
+    <string name="rotation_same_opposite_q_text">Is the direction of rotation the same or opposite direction of rotation of the previous move?</string>
+    <string name="select_rotation_amount_off_q_text">Which amount of rotation is about what is performed coming off of the feature?</string>
+    <string name="select_rotation_amount_on_q_text">Which amount of rotation is about what is performed getting onto the feature?</string>
+    <string name="board_pass_over_feature_q_text">Does the front or the back of the board pass over the feature first?</string>
+    <string name="more_180_continued_on_feature_q_text">Is more than a 180 degree spin continued while on the feature?</string>
+    <string name="total_spins_q_text">How many spins in total were performed from start to beginning of the trick?</string>
+    <string name="spins_before_feature_q_text">How many spins are performed in the air before landing on the feature?</string>
+    <string name="spins_after_feature_q_text">How many spins are performed in the air after getting off the feature?</string>
+    <string name="before_stall_feature_180_q_text">Is a 180 degree rotation done in the air before hitting the stall on the feature?</string>
+    <string name="after_stall_feature_180_q_text">Is a 180 degree rotation done just after stalling on the feature?</string>
+    <string name="board_contact_feature_stall_q_text">What part of the board is in contact to the feature when fully stalled on the feature?</string>
+    <string name="press_back_foot_stall_q_text">Is a press over the trailing foot performed while stalled?</string>
+    <string name="feature_tapped_q_text">What type of feature is being tapped?</string>
+    <string name="feature_q_text">What feature?</string>
+
+    <!-- questions for the butter part of the tree -->
+    <string name="board_on_off_ground_q_text">Does the board stay on the ground through during the trick or gets off the ground?</string>
+    <string name="side_board_pressed_q_text">Which side of the board is being pressed at the beginning of the trick?</string>
+    <string name="any_rotation_q_text">Is any rotation performed during this trick?</string>
+    <string name="pause_90_q_text">Is there a pause in the rotation at about 90 degrees of rotation?</string>
+    <string name="either_90_or_270_opposite_q_text">Is the rotation after the pause: 90 degrees in either direction or 270 degrees in the opposite direction?</string>
+    <string name="last_90_rotation_direction_q_text">Is the last 90 degree rotation the same or opposite direction of the last rotation?</string>
+    <string name="many_spins_in_press_q_text">How many degrees of rotation are preformed while pressed?</string>
+    <string name="either_90_or_270_same_q_text">Is the rotation after the pause: 90 degrees in either direction or 270 degrees in the same direction?</string>
+    <string name="hands_on_ground_behind_q_text">Are one or both hands being put on the ground behind the board?</string>
+    <string name="hands_ground_back_leg_extended_q_text">Does the back leg stay extended when the hands are on the ground or bent?</string>
+    <string name="hands_ground_some_point_q_text">Are one or both hands on the ground at some point in this trick?</string>
+    <string name="rotation_180_or_360_q_text">Is a 180 degree or 360 degree rotation made during this trick?</string>
+    <string name="rotation_90_less_q_text">Is the rotation done about 90 degrees or less, including no rotation?</string>
+    <string name="approached_up_incline_q_text">Is the trick approached going up an incline and performed at the top of transitioning back down it?</string>
+    <string name="nose_press_grabbing_tail_q_text">Is the nose of the board pressed hard into the ground and the back hand grabbing anywhere around the tail?</string>
+    <string name="tail_press_grabbing_nose_q_text">Is the tail of the board pressed hard into the ground and the front hand grabbing anywhere around the nose?</string>
+
+    <!-- button names -->
+    <string name="aerial_button_text">Aerial</string>
+    <string name="jibb_button_text">Jib</string>
+    <string name="butter_button_text">Butter</string>
+    <string name="other_button_text">Other</string>
+
+    <string name="switch_button_text">Switch</string>
+    <string name="natural_button_text">Natural</string>
+    <string name="skip_button_text">Skip</string>
+
+    <string name="yes_button_text">Yes</string>
+    <string name="no_button_text">No</string>
+
+    <string name="ollie_button_text">Ollie</string>
+    <string name="nollie_button_text">Nollie</string>
+    <string name="straight_button_text">Straight</string>
+
+    <string name="frontside_button_text">Frontside</string>
+    <string name="backside_button_text">Backside</string>
+    <string name="straight_on_button_text">Straight On</string>
+    <string name="no_rotation_button_text">No Rotation</string>
+
+    <string name="front_button_text">Front</string>
+    <string name="back_button_text">Back</string>
+
+    <string name="slide_button_text">Slide</string>
+    <string name="stall_button_text">Stall</string>
+    <string name="tap_button_text">Tap</string>
+
+    <string name="box_button_text">Box</string>
+    <string name="rail_button_text">Rail</string>
+    <string name="pipe_button_text">Pipe</string>
+
+    <string name="fifty_fifty_button_text">50-50</string>
+    <string name="boardslide_button_text">Boardslide</string>
+    <string name="lipslide_button_text">Lipslide</string>
+
+    <string name="tail_press_button_text">Tail Press</string>
+    <string name="nose_press_button_text">Nose Press</string>
+
+    <string name="nose_button_text">Nose</string>
+    <string name="tail_button_text">Tail</string>
+
+    <string name="leading_foot_button_text">Leading Foot</string>
+    <string name="trailing_foot_button_text">Trailing Foot</string>
+    <string name="inbetween_feet_button_text">In between Feet</string>
+
+    <string name="same_button_text">Same</string>
+    <string name="opposite_button_text">Opposite</string>
+
+    <string name="num_450_button_text">450</string>
+    <string name="num_630_button_text">630</string>
+    <string name="num_180_button_text">180</string>
+    <string name="num_270_button_text">270</string>
+    <string name="num_90_button_text">90</string>
+    <string name="num_360_button_text">360</string>
+
+    <string name="on_the_ground_button_text">On the ground</string>
+    <string name="off_the_ground_button_text">Off the ground</string>
+
+    <string name="extended_button_text">Extended</string>
+    <string name="bent_button_text">Bent</string>
+
+    <string name="select_button_text">Select</string>
+
+    <string name="save_button_text">Save</string>
+    <string name="continue_button_text">Continue</string>
+
+    <string name="restart_button_text">Restart</string>
+
+    <string name="complete_button_text">Complete</string>
+    <string name="close_button_text">Close</string>
+
+    <string name="shorten_button_text">Shorten</string>
+    <string name="lengthen_button_text">Lengthen</string>
+    <string name="try_again_button_text">Try again</string>
+
+    <string name="important_button_text">Important</string>
+
+    <string name="ok_button_text">OK</string>
+    <string name="order_button_text">Order</string>
+
+    <string name="find_trick_button_text">Define And Find a Trick</string>
+
+    <string name="tricks_completed_button_text">Tricks Completed</string>
+    <string name="tricks_to_do_button_text">Tricks To Do</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="replace_button_text">Replace</string>
+
+    <string name="credits_button_text">Credits</string>
+    <string name="your_stats_button_text">Your Stats</string>
+    <string name="learn_button_text">Learn</string>
+    <string name="important_terminology_button_text">Important Terminology</string>
+    <string name="helpful_links_button_text">Helpful Links</string>
+    <string name="understanding_defining_a_trick_button_text">Understanding Defining A Trick</string>
+    <string name="email_me_button_text">Email Me</string>
+
+    <!-- text for the question answers with too many selections to warrent a branch for each option -->
+    <string name="select_spins_text">Select number in increments of 180 degree rotations.</string>
+    <string name="select_grab_text">Select an available grab using the image below or type it in if you cannot find it.</string>
+    <string name="select_feature_text">Select an available feature or type it in if not found.</string>
+
+    <!-- Parts of trick names that are not a buttons text -->
+    <string name="cab_trick">Cab</string>
+    <string name="tamedog_trick">Tamedog</string>
+    <string name="wildcat_trick">Wildcat</string>
+    <string name="fakie_trick">Fakie</string>
+
+    <!-- descriptions for page options -->
+    <string name="category_description_text">
+        Choose the category of trick that the trick you are looking for falls under.
+    </string>
+    <string name="feature_description_text">
+        Choose a feature that describes what the trick was performed on. The 3 most common features
+        are boxes, rails, and pipes. Boxes will have a flat, white-ish top. Rails are most always
+        metal and thin, similar to the handrails of a staircase. Pipes (or tubes) have a hollow
+        middle. Features come in a practically endless variety of shapes and positions so if you
+        have a more specific name for the feature, select Other and type in it.
+    </string>
+    <string name="aerial_description_text">
+        A trick performed where the snowboard lifts off the ground off of an allocated jump with a
+        ramp.
+    </string>
+    <string name="butter_description_text">
+        A trick that can be performed on flat ground or off mellow hills, often starting with the
+        snowboarders weight over the nose or tail of the snowboard.
+    </string>
+    <string name="jib_description_text">
+        A trick that is performed across a surface that is not snow, such as rails, boxes, trees,
+        etc.
+    </string>
+
+    <string name="butter_continue_description_text">
+        The great thing about butter tricks is that you can almost always connect multiple
+        butter tricks together as long as they are all performed in one fluid motion. Endless possibilities!
+        If this trick is not the last one performed of a combination butter trick, click CONTINUE to chain on
+        another trick. Press Try again to restart this search. Press Complete if this is the full trick.
+    </string>
+    <string name="trick_discovered_description_text">
+        Press the SAVE button to save this trick as shown above to the My Trick List or to the
+        Tricks To Do List. You can get the shorter and more slangy name of the trick by pressing
+        Shorten. If this was not the trick you were looking for, you can press Try again or exit.
+    </string>
+    <string name="stance_approach_description_text">
+        This question refers whether the rider is starting the trick in their dominant and most
+        comfortable stance (Natural) or their non-dominant (Switch). A stance can have either foot leading down the slope:
+        the left foot called Regular or the right foot called Goofy. If you are not sure if the trick starts
+        Natural or Switch, or it is irrelevant, click Skip.
+    </string>
+    <string name="spins_performed_description_text">
+        Select Yes if there is at least a full 180 degrees of rotation (half a full rotation)
+        done from the moment right before going airborne to when the trick is landed. This is the
+        amount of rotation of the board.
+    </string>
+    <string name="rotation_direction_description_text">
+        Direction of rotation is one of two ways, defined by what side of the body of the rider is facing down the hill in the first
+        90 degrees of rotation: the front of the body (Frontside) or the back of the body (Backside).
+    </string>
+    <string name="inversion_performed_description_text">
+        An inversion is defined as the head being below the head of the rider. If at any point while
+        in the air this is true, select Yes.
+    </string>
+    <string name="inversion_direction_description_text">
+        The inversion direction can have either the head going back behind the body (Back) or
+        the head going in front of the body (Front).
+    </string>
+    <string name="pop_description_text">
+        Pop is describing the way the rider uses the board to jump off the ground. They can transfer
+        their weight over their back foot, springing off the tail of the board (Ollie). They can transfer
+        their weight over their front foot, springing off the nose of the board (Nollie). They can
+        have their weight centered over the board, jumping with the board flat on the ground (Straight).
+        If you are not sure or it is irrelevant to this trick, select Straight.
+    </string>
+    <string name="grab_performed_description_text">
+        A grab is the act of grabbing the board with one of either hands or both at the same time while airborne.
+    </string>
+    <string name="grab_description_text">
+        Use the image to select the an available grab or if it is not an option select Other to type one in.
+    </string>
+    <string name="shifty_description_text">
+        A shifty is the act of counter rotating the board separate of the riders body while in the air and
+        bringing the counter rotation back to the proper position being landing.
+    </string>
+
+    <string name="jib_type_description_text">
+        A Slide is literally sliding across a feature from one end to the other. A Stall is approaching
+        a feature on a slight incline and stopping on that feature and coming off the feature back down the side
+        it was approached on, similar to the act of going up and down the side of a halfpipe. A Tap is
+        jumping over a feature and quickly hitting the feature with the board while passing it.
+    </string>
+    <string name="tap_board_description_text">
+        The Nose is the leading end of the board. The Tail is the trailing end of the board. If you
+        are not sure what it is or it is irrelevant, select Skip.
+    </string>
+    <string name="side_feature_approached_description_text">
+        The way a feature is approached is defined by what way the feature is facing the rider.
+        The feature in front of the rider (Frontside) or the feature to the back of the rider (Backside)
+        or going straight at the feature (Straight On).
+    </string>
+    <string name="stall_contact_description_text">
+        When fully stopped on the feature, is the board in contact to the feature in between the rider
+        feet/bindings (In between Feet), or on or past the riders back foot (Trailing Foot). The back foot
+        being the foot going uphill.
+    </string>
+    <string name="rotation_onto_feature_description_text">
+        This is asking about the rotation done in between the moment the board leaves the snow to the moment
+        the rider lands on the feature. Also the rotation is about the boards movement, the rotation or
+        lack rotation of the rider themselves is irrelevant.
+    </string>
+    <string name="rotation_off_feature_description_text">
+        This is asking about the rotation done in between the moment the board leaves the feature to
+        the moment the rider lands back on the snow. Also the rotation is about the boards movement, the rotation or
+        lack rotation of the rider themselves is irrelevant.
+    </string>
+    <string name="after_stall_rotation_description_text">
+        This question is asking about the rotation of the board itself from the moment the board gets
+        off of the feature to when the board lands back on the snow. It does not count as a 180 rotation
+        unless the board is riding away straight and not on an edge.
+    </string>
+    <string name="press_stall_description_text">
+        Answer Yes if the rider transfers their weight over their foot on the uphill side while on the feature.
+        It will also look like the rider is poking the nose of their board over the feature.
+    </string>
+    <string name="type_slide_description_text">
+        The rider can get on a feature 3 different ways: on the feature without any rotation and riding on
+        it straight with the board in contact with the feature along the entire length of itself (50-50),
+        a slight rotation about 90 degrees where the front/leading end of the board goes over the feature and the
+        board is sliding perpendicular on the feature (Boardslide), or a slight rotation about 90 degrees
+        where the back/trailing end of the board goes over the feature and the board is sliding perpendicular
+        on the feature (Lipslide).
+    </string>
+    <string name="select_rotation_180_270_description_text">
+        Answers in degrees of rotation and it about the amount of rotation of the riders board, regardless of
+        the riders body. 180 being a half a full rotation and 270 three quarters of one. If it is clearly
+        not a 180 degree rotation but not exactly a 270, select 270 as it can be not exactly 270 degrees.
+    </string>
+    <string name="press_description_text">
+        A press can be on the nose, the leading end of the board (Front), or the tail, the trailing end of the
+        board(Back). It is performed when the riders weight is transferred over the nose (Nose Press) or the
+        tail (Tail Press). The opposite end of the board should be off the ground if properly pressed.
+    </string>
+    <string name="part_board_feature_description_text">
+        According to the foot positioning of the rider at the start of the trick before jumping off the
+        snow to get on the feature, the board could have the feature under the leading foot, over the
+        trailing foot, or in between the feet/bindings. Note if it is over the leading foot or the
+        trailing foot, the rider weight should be transferred over said foot.
+    </string>
+    <string name="board_pass_over_description_text">
+        According to the foot positioning of the rider at the start of the trick before jumping off the
+        snow to get on the feature, it can be the front/leading foot (Front) or the back/trailing foot
+        (Back).
+    </string>
+    <string name="spin_continued_on_feature_description_text">
+        This spin must have the rotation done while on the feature and be at least half a full rotation.
+        The board will stay in contact with the feature through the spins. This continual spinning
+        while on the feature is most commonly and easily done on a box feature, but it is possible
+        on other features.
+    </string>
+    <string name="stance_landed_description_text">
+        This question refers whether the rider ends the trick in their dominant and most
+        comfortable stance (Natural) or their non-dominant (Switch). A stance have either foot leading down the slope:
+        the left foot called Regular or the right foot called Goofy. If you are not sure if the trick ends
+        Natural or Switch, or it is irrelevant, click Skip.
+    </string>
+    <string name="tap_off_description_text">
+        This would involve jumping off the feature just before reaching the end and while in the air
+        using one end of the board to literally hit the feature. The can be done with the front/leading
+        end of the board (Nose) or the back/trailing end of the board (Tail).
+    </string>
+    <string name="same_opposite_rotation_description_text">
+        This only has to do with the boards rotation, the riders body is irrelevant. You will have
+        the board make a rotation getting onto the feature. Is the next act of rotation the same
+        or the opposite direction of that first act of rotation.
+    </string>
+
+    <string name="on_off_ground_description_text">
+        Remember if you are finding a trick that has more than one butter trick done in the full motion,
+        you are only answering this question according to the single part of the full trick you are
+        describing. This is important because the trick can involve one of the trick done while with the board in contact with the
+        ground and the another with the board coming off the ground.
+    </string>
+    <string name="any_rotation_description_text">
+        Remember if you are finding a trick that has more than one butter trick done in the full motion,
+        you are only answering this question according to the single part of the full trick you are
+        describing. This is important because the trick can involve one of the trick done without any rotation
+        and the another with rotation. Also rotation refers only to the boards rotation, the riders body is irrelevant.
+    </string>
+    <string name="pause_at_90_description_text">
+        If Yes, the first move of this specific butter will be 90 degrees of rotation followed by a clear period of
+        time with no rotation after the initial 90 degrees. Remember the rotation refers only to the boards rotation,
+        the riders body is irrelevant.
+    </string>
+    <string name="back_leg_extended_description_text">
+        The back leg is the trailing leg or the leg on the uphill side of the slope at the time of
+        preforming this trick.
+    </string>
+    <string name="up_incline_description_text">
+        Similar to the way a trick is performed at the top of a halfpipe, this will be performed in
+        the process of transitioning back down the incline.
+    </string>
+    <string name="board_block_description_text">
+        This will involve the length of the board being close to vertical when these actions are performed
+        and the rider riding away after this back the way the trick was approached.
+    </string>
+    <string name="last_90_after_pause_description_text">
+        The last rotation refers to the rotation of the initial rotation that stops at 90 degrees for
+        a period of time. Answer if the following rotation is in the same or opposite direction of
+        rotation.
+    </string>
+
+    <!-- the message for after clicking a category to briefly explain things with a do not show again checkbox -->
+    <string name="aerial_explain_text">
+        An Aerial for this apps purposes is defined as a trick where the rider is airborne and the
+        trick is done off a purposefully allocated jump, so generally an artificial jump. This can include
+        drop offs and side hits to your own discretion but should not include mellow hills or bumps as
+        those are reserved for Butters. The start of an Aerial trick is marked by the moment just before going
+        airborne and ends when the board lands back on the ground. Anything done before or after these
+        two points are not a part of the trick. The start and end of the trick is important to note
+        when answering future questions. Can define flatspins and inversion but not tricks that involve
+        both at the same time like corks or rodeos.
+    </string>
+
+    <string name="butter_explain_text">
+        A Butter for this apps purposes is defined as a trick done on flat ground or mellow hills.
+        Any butter that you find in this tree is "relatively" simple and describes a single move.
+        Many butter tricks are a combination of these simple tricks put back-to-back in one
+        fluid motion and you will be able to chain together a combination butter in this search by defining
+        each part separately. Because the trick can have multiple parts, the trick must be looked at
+        closely to divide it into each move, which can be defined by a change of press, rotation, etc.
+        If the board goes airborne, everything done in the air until the board is back on the ground
+        defines a single move. If the riders weight is centered over the board with it flat on the ground
+        for anything more than a slight moment, that marks the end of the butter trick. The trick starts
+        when a press is performed or the board goes airborne.
+    </string>
+
+    <string name="jib_explain_text">
+        A Jib is a trick done riding the board across a non-pisted surface AKA anything that is not snow.
+        Boxes, rails, trees, houses, balls, anything. The variety of features to jib on are practically
+        endless so you are given the ability to name the feature your self, but the most common features
+        to find in a park are boxes and rails. Note that because the variety is endless, this search
+        cannot cover everything. It covers practically any trick on standard park features, NOT including
+        change-ups/switch-ups done while on the feature or any butters done on the feature other than
+        a nose and tail press. The start of the trick is marked by the moment the board leaves the snow
+        to get on the feature and ends when the snowboard lands back on the snow.
+    </string>
+
+    <!-- Secondary texts for errors, alerts, small texts, etc. -->
+    <string name="no_description_dialog_text"> No description of this answer</string>
+    <string name="hold_button_text">Try holding down on the answers to see a more detailed description of what it is</string>
+    <string name="trick_discovered_greeting_text">Nice Trick! Which is called:</string>
+    <string name="butter_discovered_greeting_text">This butter in full is called:</string>
+    <string name="are_you_sure_rest_text">Are you sure you want to discard this search and start another one?</string>
+    <string name="are_you_sure_exit_text">Are you sure you want to exit \"ADDING A TRICK\"? Any current progress will be lost.</string>
+    <string name="do_not_show_again_text">Do not show this again.</string>
+    <string name="no_tricks_completed_text">
+        No tricks completed yet. Add a trick by pressing the button below to find a trick
+        by answering a series of questions or press the top right button to add a trick manually.</string>
+    <string name="no_tricks_todo_text">
+        No tricks on the To Do list. Add a trick by pressing the button below to find a trick
+        by answering a series of questions or press the top right button to add a trick manually.</string>
+    <string name="search_trick_button_text">Search for a trick</string>
+    <string name="add_trick_manually_button_text">Add trick manually</string>
+    <string name="info_button_text">Info</string>
+    <string name="settings_button_text">Settings</string>
+    <string name="to_do_button_text">To Do</string>
+    <string name="save_dialog_text">Do you want to save this trick to your Tricks Completed List or to your Tricks To Do List?</string>
+    <string name="delete_selected_button_text">Delete selected</string>
+    <string name="move_to_to_do_list">Move to To Do List</string>
+    <string name="search_in_list_action">Search in List</string>
+    <string name="move_to_completed_list">Move to Completed List</string>
+    <string name="duplicate_completed_list">This trick is already saved in your Tricks Completed List. Do you want to replace it with this trick?</string>
+    <string name="duplicate_todo_list">This trick is already saved in your Tricks To Do List. Do you want to replace it with this trick?</string>
+    <string name="trick_name_error">Must have a full name</string>
+    <string name="category_error">Must have a category</string>
+    <string name="date_error">Enter a valid date</string>
+    <string name="duplicate_error">This trick already exists</string>
+    <string name="back_button_pressed_text">Press one more time to exit app</string>
+    <string name="editor_what_list_text">Is this trick completed or something to do?</string>
+    <string name="sort_list_settings_header_text">Sort lists by:</string>
+    <string name="feedback_text">Find any problems, bugs, typos, things that should be added, false
+        information, etc.? Email me notes, suggestions, and feedback. Please be specific about the where, when, and how?</string>
+    <string name="num_tricks_info"># of tricks discovered:</string>
+    <string name="num_completed_tricks_info"># of completed tricks:</string>
+    <string name="num_tricks_to_do_info"># of tricks to do:</string>
+
+    <!-- Top bar fun messages -->
+    <string name="top_bar_beginning_search_text">What we hittin\'...</string>
+    <string name="top_bar_search_in_tree_text">Stoke up for a sweet</string>
+    <string name="top_bar_butter_found_text">Nice and buttery</string>
+    <string name="top_bar_aerial_found_text">Stomped that one out</string>
+    <string name="top_bar_jib_found_text">Are you a jibber or something?</string>
+
+    <!-- keys for Intents -->
+    <string name="add_regular_key">addRegular</string>
+    <string name="add_replacement_key">addReplacement</string>
+    <string name="edit_trick_key">editTrick</string>
+    <string name="orginial_trick_key">originalTrick</string>
+    <string name="updated_trick_key">updatedTrick</string>
+    <string name="is_completed_key">isCompleted</string>
+
+    <!-- keys and values for Shared Preferences -->
+    <string name="sort_list_by_key">sortListBy</string>
+    <string name="sort_list_order_key">sortListOrder</string>
+
+    <string name="sort_list_by_name_value">Name</string>
+    <string name="sort_list_by_category_value">Category</string>
+    <string name="sort_list_by_date_value">Date</string>
+
+    <string name="sort_list_ascending_value">Ascending</string>
+    <string name="sort_list_descending_value">Descending</string>
+
+    <!-- Content Descriptions -->
+    <string name="exit_activity_cd">Exit activity without saving anything</string>
+    <string name="icon_editor_title_cd">Icon for the title of the trick that will be displayed in the list</string>
+    <string name="icon_alternate_name_cd">Icon for the alternate name of the trick that will not be displayed</string>
+    <string name="icon_editor_category_cd">Icon for the category of this trick</string>
+    <string name="icon_date_cd">Icon for the date of the trick</string>
+    <string name="icon_inlist_cd">Icon for what list the trick should be in</string>
+    <string name="icon_notes_cd">Icon for the extra notes on this trick</string>
+    <string name="search_trick_fab_cd">Find a Trick</string>
+    <string name="find_trick_cd">Go to search to find a trick by answering a series of questions</string>
+    <string name="image_expand_trick_cd">Image to expand a trick to see all parts of it and possibly edit it</string>
+    <string name="image_features_cd">Image with examples of common features</string>
+    <string name="imagebutton_cycle_grab_cd">Cycle through available image diagrams for identifying a grab</string>
+    <string name="image_grab_cd">Image of grab diagram to identify a grab</string>
+    <string name="editor_delete_cd">Permanently delete this trick</string>
+
+    <!-- Hint texts -->
+    <string name="trick_name_editor_hint">Trick Name</string>
+    <string name="alternate_name_editor_hint">Alternate naming of the trick</string>
+    <string name="editor_category_hint">Trick category (Aerial, Jib, Butter, etc.)</string>
+    <string name="editor_date_hint">Date of trick: mm/dd/yyyy</string>
+    <string name="editor_notes_hint">Notes, descriptions, location, or information about this trick</string>
+    <string name="feature_other_hint">Type the feature name</string>
+    <string name="other_grab_hint">Type the grab name</string>
+
+    <!-- Toast texts -->
+
+
+</resources>

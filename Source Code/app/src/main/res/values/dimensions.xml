@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="question_horizontal_padding">40dp</dimen>
+    <dimen name="padding_from_border_edge">16dp</dimen>
+
+    <dimen name="margin_from_screen_edge">16dp</dimen>
+    <dimen name="editor_text_margin_from_icon">16dp</dimen>
+    <dimen name="margin_empty_list_text">64dp</dimen>
+    <dimen name="find_trick_fab_right_margin">32dp</dimen>
+    <dimen name="find_trick_fab_bottom_margin">16dp</dimen>
+    <dimen name="spinner_horizontal_margin">64dp</dimen>
+    <dimen name="question_answer_horizontal_margin">50dp</dimen>
+
+    <dimen name="trick_dicovered_elevation">100dp</dimen>
+    <dimen name="section_elevation">5dp</dimen>
+    <dimen name="display_trick_name_elevation">20dp</dimen>
+
+    <dimen name="margin_text_left_from_header">4dp</dimen>
+
+</resources>

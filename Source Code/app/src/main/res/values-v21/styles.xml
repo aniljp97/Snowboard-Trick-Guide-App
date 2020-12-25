@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="bottomBarSideButtonStyle">
+        <item name="fontFamily">@font/source_sans_pro</item>
+        <item name="android:fontFamily">@font/source_sans_pro</item>
+        <item name="android:background">@drawable/bottom_bar_side_buttons_background</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="TrickDiscoveredButtonsStyle">
+        <item name="android:background">#00000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/primaryDarkColor</item>
+        <item name="android:translationZ">@dimen/trick_dicovered_elevation</item>
+        <item name="elevation">@dimen/trick_dicovered_elevation</item>
+        <item name="android:elevation">@dimen/trick_dicovered_elevation</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

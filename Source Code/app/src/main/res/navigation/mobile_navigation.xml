@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_complete">
+
+    <fragment
+        android:id="@+id/navigation_complete"
+        android:name="my.apps.snowboardtrickguide.home.CompleteFragment"
+        android:label="@string/tricks_completed_button_text"
+        tools:layout="@layout/fragment_completed_list" />
+
+    <fragment
+        android:id="@+id/navigation_to_do"
+        android:name="my.apps.snowboardtrickguide.home.ToDoFragment"
+        android:label="@string/tricks_to_do_button_text"
+        tools:layout="@layout/fragment_to_do_list" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="my.apps.snowboardtrickguide.home.InfoFragment"
+        android:label="@string/info_button_text"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="my.apps.snowboardtrickguide.home.SettingsFragment"
+        android:label="@string/settings_button_text"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
